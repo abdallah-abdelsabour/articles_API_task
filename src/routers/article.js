@@ -5,7 +5,7 @@ router = new express.Router();
 const Article = require("../modules/article");
 
 
-//post new article to data base
+//post new article to database
 
 router.post("/articles", (req, res) => {
     const article = new Article(req.body);
